@@ -1,0 +1,85 @@
+CREATE TABLE leader_board (
+    "student_id" INT,
+    "rank" INT,
+    "batch" VARCHAR,
+    "name" VARCHAR
+);
+
+
+insert into Leader_board values(1,"1","B01 WD2 Tamil","Johnathon");
+insert into Leader_board values(2,"2","B01 WD2 Tamil","Pravin");
+insert into Leader_board values(3,"3","B01 WD2 Tamil","Samuel");
+insert into Leader_board values(4,"4","B01 WD2 Tamil","Raja");
+insert into Leader_board values(5,"5","B01 WD2 Tamil","Stalin");
+
+
+CREATE TABLE leave_application (
+    
+    "student_id" INT,
+    "from" DATE,
+    "to" DATE,
+    "status" VARCHAR,
+    "reason" TEXT
+)
+  
+ 
+
+insert into Leave_application values("1","10/03/2023","11/03/2023","approved","function");
+insert into Leave_application values("2","12/04/2023","15/04/2023","rejected","function");
+insert into Leave_application values("3","06/05/2023","07/05/2023","approved","function");
+
+create table Mentors(
+    MentorId integer,
+    Name Text,
+    Qualification text,
+    BatchAssigned text
+  );
+  
+  insert into Mentors values(1,"stalin","FSD","B51WD2 ENGLISH");
+  insert into Mentors values(2,"Johnathon","DS","B52WD3 TAMIL");
+  insert into Mentors values(3,"Aari","FSD MERN","B51WD2 TAMIL");
+  insert into Mentors values(4,"Metha","MEAN Developer","B52WD3 ENGLISH");
+  insert into Mentors values(5,"Raj","Data Analyist","B53WD4 TAMIL");
+  insert into Mentors values(6,"Tephilla","Cyber Security","B53WD4 ENGLISH");
+  
+  
+   CREATE table Students(
+  StudentId integer,
+    Name text,
+    Course text,
+    Batch text
+  );
+  
+  
+   insert into Students_list values(1,"Bala","FullStack Developer","B51WD2 TAMIL");
+   insert into Students_list values(2,"Dravid","Cyber Security","B53WD4 ENGLISH");
+   insert into Students_list values(3,"David","FullStack Developer","B51WD2 ENGLISH");
+   insert into Students_list values(4,"Vasu","Data Scientist","B52WD3 ENGLISH");
+   insert into Students_list values(5,"Aari","Data Scientist","B52WD3 TAMIL");
+   insert into Students_list values(6,"Raju","FullStack Developer","B51WD2 TAMIL");
+   insert into Students_list values(7,"Buvanesh","Data Scientist","B52WD3 ENGLISH");
+   insert into Students_list values(8,"Kalam","FullStack Developer","B51WD2 ENGLISH");
+   insert into Students_list values(9,"Sabari","Cyber Security","B53WD4 TAMIL");
+   insert into Students_list values(10,"Akshaya","Cyber Security","B53WD4 TAMIL");
+   insert into Students_list values(11,"Prasanth","Cyber Security","B53WD4 ENGLISH");
+   insert into Students_list values(12,"Deeps","Data Scientist","B52WD3 TAMIL");
+
+
+
+
+
+CREATE TABLE queries (
+    "query_id" INT ,
+    "student_id" INT,
+    "class_id" INT,
+    "title" VARCHAR,
+    "status" VARCHAR,
+    "date" DATE  
+
+);
+
+
+
+insert into Queries values("QN66044","1","03","Promise JS","solved","16/08/2023");
+insert into Queries values("QN63509","2","10","Bootstrap","solved","17/10/2023");
+insert into Queries values("QN41618","3","01","async-await","solved","19/08/2023");
